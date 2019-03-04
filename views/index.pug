@@ -5,7 +5,7 @@ html(lang="en")
     link(href='https://fonts.googleapis.com/css?family=Roboto', rel='stylesheet')
     link(rel='stylesheet', href='style.css')
   body
-    h1 Timestamp Microservice <br><br>
+    h1 Request Header Parser <br><br>
 
     h2 User Story
     p Display IP address, preferred languages (from header Accept-Language) & system infos (from header User-Agent) for my device.
@@ -15,5 +15,5 @@ html(lang="en")
     a(href='/api/whoami', target='_blank') [project_url]/api/whoami
     
     h2 Example Output
-    code &nbsp;&nbsp;{"ipaddress":"159.20.14.100","language":"en-US,en;q=0.5", <br>
+    code &nbsp;&nbsp;{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5", <br>
     code &nbsp;&nbsp;"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}
