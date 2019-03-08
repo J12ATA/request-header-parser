@@ -16,10 +16,7 @@ app.use(express.static('public'));
 app.set('view engine', 'pug');
 
 // http://expressjs.com/en/starter/basic-routing.html
-app.get('/', (req, res) => {
-  const fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
-  res.render('index', { fullUrl });
-});
+app.get('/', (req, res) => res.render('index'));
 
 // your first API endpoint... 
 app.get('/api/hello', (req, res) => {
